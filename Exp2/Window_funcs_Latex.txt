@@ -1,0 +1,17 @@
+\begin{align*}
+\text{Rectangular Window}: w(n) &= 1, \text{ n = 0,1,\dots,N-1}  \\
+  &= 0, \text{ otherwise} 
+ \\
+\text{Triangular Window}: w(n) &= 1 - 2 \cdot \left(\dfrac{n-(N-1)/2}{N-1} \right), \text{ n = 0,1,\dots,N-1}  \\
+ &= 0, \text{ otherwise}
+\\
+\text{Hanning Window}: w(n) &= 0.5-0.5 \cdot cos\left(\dfrac{2\pi n}{N-1} \right ), \text{ n = 0,1,\dots,N-1}  \\
+  &= 0, \text{ otherwise} 
+ \\
+\text{Hamming Window}: w(n) &= 0.54-0.46 \cdot cos\left(\dfrac{2\pi n}{N-1} \right ), \text{ n = 0,1,\dots,N-1}  \\
+  &= 0, \text{ otherwise} 
+ \\
+\text{Blackmann Window}: w(n) &= 0.42 - 0.5 \cdot cos\left(\dfrac{2\pi n}{N-1} \right) \\ & \ \ \ \ \ \ \ \ + 0.08 \cdot cos\left(\dfrac{4\pi n}{N-1} \right), \text{ n = 0,1,\dots,N-1}  \\
+  &= 0, \text{ otherwise} 
+ \\
+\end{align*}
